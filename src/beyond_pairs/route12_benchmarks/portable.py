@@ -34,6 +34,17 @@ def law_binding(q,p,path=None):
             'q_sha256': digest(q), 'p_sha256': digest(p),
             'input_file_sha256': hashlib.sha256(Path(path).read_bytes()).hexdigest() if path else None}
 SETTINGS = [(cut, count) for cut in (1e-8,1e-10,1e-12) for count in (3,5,10)]
+SEED_NAMESPACE = (13, 0)
+DEMO_DEFAULTS = [('N',1557),('pools',2),('calibration',99),('null',20),
+                 ('alternative',20),('maximum-cohorts',278),('seed',20261017)]
+
+def calibration_resolution(calibration, alpha=.05):
+    if type(calibration) is not int or calibration < 1:
+        raise ValueError('positive integer calibration count required')
+    minimum=1/(calibration+1)
+    return {'calibration_count':calibration,'minimum_add_one_p':minimum,'alpha':alpha,
+            'rejection_attainable':minimum<=alpha,
+            'scope':'Artificial software demonstration; small evaluation rosters do not qualify calibration or power.'}
 
 def surrogate():
     """Ten binary variables: uniform Q, P=Q(1+0.3 product of first 3 spins)."""
@@ -128,12 +139,13 @@ def demo(args):
     put(out/'registration.json',{'N':args.N,'pools':args.pools,'calibration':args.calibration,'null':args.null,
         'alternative':args.alternative,'cohorts':total,'seed':args.seed,'pair_triple_fit_bound':total*7,
         'law_source':'user-supplied positive laws' if args.laws else 'public uniform/parity surrogate',
-        'law_binding':law_binding(q,p,args.laws), 'scope':scope,'tiny_pool_warning':'Default B=3 has minimum add-one p=0.25; it cannot reject at alpha=.05. This is a pipeline demonstration.'})
+        'law_binding':law_binding(q,p,args.laws), 'scope':scope,
+        'seed_namespace':list(SEED_NAMESPACE), 'calibration_resolution':calibration_resolution(args.calibration)})
     for pool in range(args.pools):
         for law_id,purpose,count in [(0,0,args.calibration),(0,1,args.null),(1,1,args.alternative)]:
             for index in range(count):
                 identity=[args.N,pool,law_id,purpose,index]
-                seed=[args.seed,12,0,*identity]
+                seed=[args.seed,*SEED_NAMESPACE,*identity]
                 rng=np.random.default_rng(np.random.SeedSequence(seed))
                 tables=np.array([rng.multinomial(int(n),q if law_id==0 else p) for n in c.fold_sizes(args.N)])
                 result=analyse_cohort(tables,out/('cohort-'+'-'.join(map(str,identity))),q,scope=scope)
@@ -160,13 +172,16 @@ def demo(args):
                            'scientific_MSK_cohorts':'unknown provenance' if args.laws else 0,
                            'elapsed_s':time.monotonic()-start,'scope':scope})
 
-def main():
+def build_parser():
     parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='command',required=True)
     d=sub.add_parser('demo');d.add_argument('--output',required=True);d.add_argument('--laws')
-    for name,default in [('N',1557),('pools',2),('calibration',3),('null',1),('alternative',2),('maximum-cohorts',12),('seed',20261017)]:
+    for name,default in DEMO_DEFAULTS:
         d.add_argument('--'+name,type=int,default=default)
     one=sub.add_parser('cohort');one.add_argument('--counts',required=True);one.add_argument('--output',required=True)
-    args=parser.parse_args()
+    return parser
+
+def main():
+    args=build_parser().parse_args()
     if args.command=='demo':demo(args)
     else:
         values=np.load(args.counts,allow_pickle=False)

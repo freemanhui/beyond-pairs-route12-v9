@@ -1,0 +1,45 @@
+{
+  "version": "0.11.0",
+  "author_environment": {
+    "Python": "3.11.5",
+    "NumPy": "1.26.4",
+    "SciPy": "1.13.1",
+    "pytest": "8.3.3"
+  },
+  "referee_reported_environment": {
+    "Python": "3.11.16",
+    "NumPy": "2.4.6",
+    "SciPy": "1.17.1",
+    "old_tests": 38,
+    "author_reran_this_environment": false
+  },
+  "new_diagnostic_controls": {
+    "passed": 12,
+    "scope": "new arithmetic cases, no fits/draws; later sign-reference metadata clarified without changing arithmetic"
+  },
+  "new_public_default_tests": {
+    "passed": 6,
+    "isolated_candidate_origins": true
+  },
+  "independent_saved_statistic_review": {
+    "comparisons": 46,
+    "passed": true,
+    "maximum_U_and_KS_discrepancy": 0
+  },
+  "new_artificial_demo": {
+    "passed": true,
+    "cohorts": 278,
+    "new_artificial_pair_triple_fits": 1946,
+    "scientific_MSK_cohorts": 0,
+    "elapsed_s": 84.47258554201107,
+    "scope": {
+      "patient_data": false,
+      "input_provenance": "built-in artificial law",
+      "surrogate_is_MSK_reproduction": false,
+      "calibration": "specified known null law, not cohort-refitted bootstrap"
+    }
+  },
+  "old_24_and_14_test_phases": "Inherited; not rerun",
+  "biological_fits_or_draws": 0,
+  "new_diagnostic_scope": "Posthoc unadjusted diagnostic; common source paths do not establish chance, exchangeability or cause."
+}

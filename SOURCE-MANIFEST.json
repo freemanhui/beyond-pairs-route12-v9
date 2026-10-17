@@ -1,353 +1,325 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "files": [
     {
       "path": ".gitignore",
       "bytes": 93,
-      "sha256": "24f0c8819cac50692a0c4f2d52f8c707ec3c9bc21794c3358af0dab992b8cd7c",
-      "scope": "source, documentation, test or notice"
+      "sha256": "24f0c8819cac50692a0c4f2d52f8c707ec3c9bc21794c3358af0dab992b8cd7c"
     },
     {
       "path": "LEGACY-LICENCE.txt",
       "bytes": 1213,
-      "sha256": "c1205dfeedd6db3e7f214496d94cab7cedc5887852c50659004675e095db97d4",
-      "scope": "source, documentation, test or notice"
+      "sha256": "c1205dfeedd6db3e7f214496d94cab7cedc5887852c50659004675e095db97d4"
     },
     {
       "path": "LICENSE",
       "bytes": 1399,
-      "sha256": "96ec10a27dc029153ea59c5ffe933bad58675b00b73f4df299881481371cda41",
-      "scope": "source, documentation, test or notice"
+      "sha256": "96ec10a27dc029153ea59c5ffe933bad58675b00b73f4df299881481371cda41"
     },
     {
       "path": "README.md",
-      "bytes": 6386,
-      "sha256": "4bd72cd88c426b460e70fabe28198ac2cd087e3697d2628566bfff938bb9759f",
-      "scope": "source, documentation, test or notice"
+      "bytes": 7926,
+      "sha256": "c7bbdee52956d872a08a96d1a0948e2828b01a87ce848e2410d2b9e154e723ba"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 2511,
-      "sha256": "7b1ae0a7d03afb850515bfa4a87bb6dc5b4acf1f2ef4f0757324d428e0c2b33a",
-      "scope": "source, documentation, test or notice"
+      "bytes": 4438,
+      "sha256": "c9837b95535a01d6e4dc00601ccba2231915219260c62cda03ceeb8440e4d440"
     },
     {
       "path": "examples/demo.py",
       "bytes": 1572,
-      "sha256": "6c777f398cbae9c70e0678992f6f4d9a4ba927e72cbe6ccb11a619303a3fd7e1",
-      "scope": "source, documentation, test or notice"
+      "sha256": "6c777f398cbae9c70e0678992f6f4d9a4ba927e72cbe6ccb11a619303a3fd7e1"
     },
     {
       "path": "examples/replay_counts.py",
       "bytes": 1212,
-      "sha256": "c50cb49ca7113ac19c35730c2b06a106c581370a5950b9b00cc905560011ba7c",
-      "scope": "source, documentation, test or notice"
+      "sha256": "c50cb49ca7113ac19c35730c2b06a106c581370a5950b9b00cc905560011ba7c"
     },
     {
       "path": "notices/numpy-LICENSE.txt",
       "bytes": 93961,
-      "sha256": "d9aa013a9509b655c3fd4b12e8d2ff222df83df39273ba1697a1a869d55b2129",
-      "scope": "source, documentation, test or notice"
+      "sha256": "d9aa013a9509b655c3fd4b12e8d2ff222df83df39273ba1697a1a869d55b2129"
     },
     {
       "path": "notices/scipy-LICENSE.txt",
       "bytes": 46808,
-      "sha256": "3b05dc069af17a3e112235cff907203272237bc345722cd1e50c192062ae050a",
-      "scope": "source, documentation, test or notice"
+      "sha256": "3b05dc069af17a3e112235cff907203272237bc345722cd1e50c192062ae050a"
     },
     {
       "path": "provenance/known-v11.json",
       "bytes": 1102,
-      "sha256": "5145450658b970c4d5a22e4f2ec4f7c2ef75bc2bb8278366f19c7e3e6a78792f",
-      "scope": "source, documentation, test or notice"
+      "sha256": "5145450658b970c4d5a22e4f2ec4f7c2ef75bc2bb8278366f19c7e3e6a78792f"
+    },
+    {
+      "path": "provenance/release-validation-v13.json",
+      "bytes": 1352,
+      "sha256": "1f2e9f3a4b36268b65b8a1c13c6a794b6534ec8cebe08c56d9cf4edd71f69d10"
     },
     {
       "path": "provenance/release-validation.json",
       "bytes": 1234,
-      "sha256": "f802c3be993badb1ec631cfe3736ba6a3463ab7cf77a6c64af2fbb00abcaeb72",
-      "scope": "source, documentation, test or notice"
+      "sha256": "f802c3be993badb1ec631cfe3736ba6a3463ab7cf77a6c64af2fbb00abcaeb72"
     },
     {
       "path": "provenance/source-manifest-v0.9.0.json",
       "bytes": 7718,
-      "sha256": "f78a2e355793662972e2df5a94200272ccf9c1cedef2058d2e32e26855bbc6ab",
-      "scope": "source, documentation, test or notice"
+      "sha256": "f78a2e355793662972e2df5a94200272ccf9c1cedef2058d2e32e26855bbc6ab"
     },
     {
       "path": "provenance/v11-producers/README.md",
       "bytes": 811,
-      "sha256": "6c32f0a0eade5a1e45f24f67dfd9d3b3a34ceea346a3ce0802ee071065151fa4",
-      "scope": "source, documentation, test or notice"
+      "sha256": "6c32f0a0eade5a1e45f24f67dfd9d3b3a34ceea346a3ce0802ee071065151fa4"
     },
     {
       "path": "provenance/v11-producers/route12_benchmarks_audit.py",
       "bytes": 21842,
-      "sha256": "4cee54e7bc1eeadc761d2c89e35dea414e9fe7770e8d34e818aa37b31ed313d3",
-      "scope": "source, documentation, test or notice"
+      "sha256": "4cee54e7bc1eeadc761d2c89e35dea414e9fe7770e8d34e818aa37b31ed313d3"
     },
     {
       "path": "provenance/v11-producers/route12_benchmarks_initial.py",
       "bytes": 7472,
-      "sha256": "858dad0ccd5a9942b1becb07b3412a1867e1b60bc442c2d201f9c9a688a18c3d",
-      "scope": "source, documentation, test or notice"
+      "sha256": "858dad0ccd5a9942b1becb07b3412a1867e1b60bc442c2d201f9c9a688a18c3d"
     },
     {
       "path": "provenance/v11-producers/route12_benchmarks_secondary.py",
       "bytes": 10204,
-      "sha256": "8bfd8896537c4571a4cab04dd41df590623854f6bc981586e1a2b16f81001766",
-      "scope": "source, documentation, test or notice"
+      "sha256": "8bfd8896537c4571a4cab04dd41df590623854f6bc981586e1a2b16f81001766"
     },
     {
       "path": "provenance/v11-producers/route12_benchmarks_studies.py",
       "bytes": 10283,
-      "sha256": "1e0f1a64424cb2d2050fce49de82a77575583c6804cb5ec719c6dea40e67fc5f",
-      "scope": "source, documentation, test or notice"
+      "sha256": "1e0f1a64424cb2d2050fce49de82a77575583c6804cb5ec719c6dea40e67fc5f"
     },
     {
       "path": "pyproject.toml",
-      "bytes": 583,
-      "sha256": "6529dca2085d2d6437ab48171291871c346b2a2169ad3af16958612913203515",
-      "scope": "source, documentation, test or notice"
+      "bytes": 590,
+      "sha256": "6b6930514da83cc75c1797352c3df59ba7f6ccd47f5ba03753aa7ec942312996"
     },
     {
       "path": "requirements-dev.txt",
       "bytes": 33,
-      "sha256": "02a8fce7dd8d5fbd44c0ec8d51d5d6967d44a12d3149427fe6b129e705ab106a",
-      "scope": "source, documentation, test or notice"
+      "sha256": "02a8fce7dd8d5fbd44c0ec8d51d5d6967d44a12d3149427fe6b129e705ab106a"
+    },
+    {
+      "path": "requirements-study.txt",
+      "bytes": 61,
+      "sha256": "cfde005fde30a49353c6cbed03e878e0eacba33e4173556351492fa44d0c1693"
     },
     {
       "path": "requirements.txt",
       "bytes": 28,
-      "sha256": "5a81cde5d4f409222788b0a0da88fff0acdb160f45ab8839d9661cff6aa10424",
-      "scope": "source, documentation, test or notice"
+      "sha256": "5a81cde5d4f409222788b0a0da88fff0acdb160f45ab8839d9661cff6aa10424"
     },
     {
       "path": "results/README.md",
       "bytes": 1784,
-      "sha256": "947ca606cedf1560bc62d69bb705fe1491685011423ba7ecc3dd35a3bb1bbe40",
-      "scope": "reported scalar summary"
+      "sha256": "947ca606cedf1560bc62d69bb705fe1491685011423ba7ecc3dd35a3bb1bbe40"
+    },
+    {
+      "path": "results/calibration-evaluation-diagnostic.json",
+      "bytes": 32109,
+      "sha256": "b1e033af9fc48c5a48b7992343b0449776694e4bc59311caf74b059e25727664"
     },
     {
       "path": "results/cutoff-comparisons.csv",
       "bytes": 597,
-      "sha256": "76fba8167874c5791035a03ac89134c13263bac4d89d9c94691b5d446df3bd5c",
-      "scope": "reported scalar summary"
+      "sha256": "76fba8167874c5791035a03ac89134c13263bac4d89d9c94691b5d446df3bd5c"
     },
     {
       "path": "results/hidden-coordinates.csv",
       "bytes": 7654,
-      "sha256": "da8e84bab93d2f5ae5fe2747425832f5e66aad975e1f46e61a33851f8f1227ad",
-      "scope": "reported scalar summary"
+      "sha256": "da8e84bab93d2f5ae5fe2747425832f5e66aad975e1f46e61a33851f8f1227ad"
     },
     {
       "path": "results/lrt-paired.csv",
       "bytes": 225,
-      "sha256": "ff3915e0b709afaea3ba2221a7040701fc603c58c5e104bd994fd7068095929a",
-      "scope": "reported scalar summary"
+      "sha256": "ff3915e0b709afaea3ba2221a7040701fc603c58c5e104bd994fd7068095929a"
     },
     {
       "path": "results/lrt.csv",
       "bytes": 466119,
-      "sha256": "7872860e0e44af8ed3353db72bf3ff7f8ee260eb4d5c4756e27e0edb98123811",
-      "scope": "reported scalar summary"
+      "sha256": "7872860e0e44af8ed3353db72bf3ff7f8ee260eb4d5c4756e27e0edb98123811"
     },
     {
       "path": "results/matched-oracle.csv",
       "bytes": 2573645,
-      "sha256": "c79a6f244c0787b04cb95f90964b0eafa7f30582af1436e4fd8cc923b094211c",
-      "scope": "reported scalar summary"
+      "sha256": "c79a6f244c0787b04cb95f90964b0eafa7f30582af1436e4fd8cc923b094211c"
     },
     {
       "path": "results/pool-counts.csv",
       "bytes": 1469,
-      "sha256": "cd9239498b1b9f1f2eff80dbe5d4b113c6d91aa5fb6d789af645e3f02e069d82",
-      "scope": "reported scalar summary"
+      "sha256": "cd9239498b1b9f1f2eff80dbe5d4b113c6d91aa5fb6d789af645e3f02e069d82"
     },
     {
       "path": "results/pools.csv",
       "bytes": 2807300,
-      "sha256": "4a002706392eacf24fb8dea5f65953a57db97a801637d3a5cb07184636dcd2ad",
-      "scope": "reported scalar summary"
+      "sha256": "4a002706392eacf24fb8dea5f65953a57db97a801637d3a5cb07184636dcd2ad"
     },
     {
       "path": "results/rank-reference-diagnostics.json",
       "bytes": 1305,
-      "sha256": "d4de696a3378041e3b763f12b540257ae6cad001db1bfe8119d355ec8ad10440",
-      "scope": "reported scalar summary"
+      "sha256": "d4de696a3378041e3b763f12b540257ae6cad001db1bfe8119d355ec8ad10440"
     },
     {
       "path": "results/sandwich-family-summary.json",
       "bytes": 483,
-      "sha256": "535d70e8b7c2667591ec485fcd8653cacb4a140f83f3a02e80ed5c659fd4a3ac",
-      "scope": "reported scalar summary"
+      "sha256": "535d70e8b7c2667591ec485fcd8653cacb4a140f83f3a02e80ed5c659fd4a3ac"
     },
     {
       "path": "results/sandwich-sweep.csv",
       "bytes": 857,
-      "sha256": "241e974398bd1992ef5dbe95fb6996c94d0ab83cef062b4c926eb77ac1f55a65",
-      "scope": "reported scalar summary"
+      "sha256": "241e974398bd1992ef5dbe95fb6996c94d0ab83cef062b4c926eb77ac1f55a65"
     },
     {
       "path": "results/sensitivity.csv",
       "bytes": 3556436,
-      "sha256": "080900ee11ee4f0f96cb9072e5c4a1590c32729268379b5e06ed20e308d673b5",
-      "scope": "reported scalar summary"
+      "sha256": "080900ee11ee4f0f96cb9072e5c4a1590c32729268379b5e06ed20e308d673b5"
     },
     {
       "path": "results/triple-coefficients-rounded.csv",
       "bytes": 7017,
-      "sha256": "14bd3418a256a38d2f7acbb04cce371b5b279ad64abc58c2756b42831292802b",
-      "scope": "reported scalar summary"
+      "sha256": "14bd3418a256a38d2f7acbb04cce371b5b279ad64abc58c2756b42831292802b"
     },
     {
       "path": "src/beyond_pairs/__init__.py",
       "bytes": 91,
-      "sha256": "b83495cec1e9c922f0863fd3566701a85ef8ea497453c15c19934b6bb9534127",
-      "scope": "source, documentation, test or notice"
+      "sha256": "b83495cec1e9c922f0863fd3566701a85ef8ea497453c15c19934b6bb9534127"
     },
     {
       "path": "src/beyond_pairs/finite_sample_ladder.py",
       "bytes": 6554,
-      "sha256": "cff74a53a16d7f4b6c3b85847a5ae701836c3f61bb62944b447abb1a507d1c2f",
-      "scope": "source, documentation, test or notice"
+      "sha256": "cff74a53a16d7f4b6c3b85847a5ae701836c3f61bb62944b447abb1a507d1c2f"
     },
     {
       "path": "src/beyond_pairs/hidden_layer.py",
       "bytes": 13860,
-      "sha256": "90fc70449974d189dd8e10616ef3059cfc3790ef68d466ab4c177e4c0df536aa",
-      "scope": "source, documentation, test or notice"
+      "sha256": "90fc70449974d189dd8e10616ef3059cfc3790ef68d466ab4c177e4c0df536aa"
     },
     {
       "path": "src/beyond_pairs/information_layers.py",
       "bytes": 7034,
-      "sha256": "69e8cd6aa539fc295b715bdccba8464772ad8a6df8501bbb70a0f82ace5fa452",
-      "scope": "source, documentation, test or notice"
+      "sha256": "69e8cd6aa539fc295b715bdccba8464772ad8a6df8501bbb70a0f82ace5fa452"
     },
     {
       "path": "src/beyond_pairs/measurement_score.py",
       "bytes": 5226,
-      "sha256": "540247995aae7d25959dd888a3a5dc8a3842adf263c7f1f38e6574c937d069fe",
-      "scope": "source, documentation, test or notice"
+      "sha256": "540247995aae7d25959dd888a3a5dc8a3842adf263c7f1f38e6574c937d069fe"
     },
     {
       "path": "src/beyond_pairs/order_ladder.py",
       "bytes": 4998,
-      "sha256": "ae186cf782eb26377393c20bfb36f9fa6360e9f0a8aadf8e1d8e51b6eb9d69f3",
-      "scope": "source, documentation, test or notice"
+      "sha256": "ae186cf782eb26377393c20bfb36f9fa6360e9f0a8aadf8e1d8e51b6eb9d69f3"
     },
     {
       "path": "src/beyond_pairs/route12/__init__.py",
       "bytes": 79,
-      "sha256": "c53ac607a0f30a0258864005de11007b2d077763b86e329e9fee854cc422b54f",
-      "scope": "source, documentation, test or notice"
+      "sha256": "c53ac607a0f30a0258864005de11007b2d077763b86e329e9fee854cc422b54f"
     },
     {
       "path": "src/beyond_pairs/route12/crossfit.py",
       "bytes": 8146,
-      "sha256": "43fa027810a681521902a2149f624b713c6d71afa119bf534f7f1791e419bd48",
-      "scope": "source, documentation, test or notice"
+      "sha256": "43fa027810a681521902a2149f624b713c6d71afa119bf534f7f1791e419bd48"
     },
     {
       "path": "src/beyond_pairs/route12/masked_projection.py",
       "bytes": 8296,
-      "sha256": "e80d70627e36c3acdda6cbfb959c3a8eabd050b3d1b17019123e44df64ec4523",
-      "scope": "source, documentation, test or notice"
+      "sha256": "e80d70627e36c3acdda6cbfb959c3a8eabd050b3d1b17019123e44df64ec4523"
     },
     {
       "path": "src/beyond_pairs/route12/numerics.py",
       "bytes": 3275,
-      "sha256": "7155fa0475fe029ee521ecc9dba18cd45a4ea3e1034481fe27b95be6ec2881cf",
-      "scope": "source, documentation, test or notice"
+      "sha256": "7155fa0475fe029ee521ecc9dba18cd45a4ea3e1034481fe27b95be6ec2881cf"
     },
     {
       "path": "src/beyond_pairs/route12/representation.py",
       "bytes": 6124,
-      "sha256": "a48d6217a48098601e64c6de009232119dea91564db2f5345871bf88386f6693",
-      "scope": "source, documentation, test or notice"
+      "sha256": "a48d6217a48098601e64c6de009232119dea91564db2f5345871bf88386f6693"
     },
     {
       "path": "src/beyond_pairs/route12_benchmarks/__init__.py",
       "bytes": 76,
-      "sha256": "97bd110a057ea09edc687f7771c9715008692dcd94c8dc1040998f1d456ae830",
-      "scope": "source, documentation, test or notice"
+      "sha256": "97bd110a057ea09edc687f7771c9715008692dcd94c8dc1040998f1d456ae830"
     },
     {
       "path": "src/beyond_pairs/route12_benchmarks/core.py",
       "bytes": 10101,
-      "sha256": "f295bbbc5b3359dcf91f95c8e1e339da9b05498e9c78131cafe6698e7d1b020a",
-      "scope": "source, documentation, test or notice"
+      "sha256": "f295bbbc5b3359dcf91f95c8e1e339da9b05498e9c78131cafe6698e7d1b020a"
+    },
+    {
+      "path": "src/beyond_pairs/route12_benchmarks/null_diagnostic.py",
+      "bytes": 6363,
+      "sha256": "0f0008ddda78f9f4a270d921e27f4b3406a758d3f5419522fd33a11ca9c317d5"
     },
     {
       "path": "src/beyond_pairs/route12_benchmarks/portable.py",
-      "bytes": 9836,
-      "sha256": "7a041bfccfcb410cdc1bf771d99617547babcd5288bae7c5175128a651445a1e",
-      "scope": "source, documentation, test or notice"
+      "bytes": 10427,
+      "sha256": "141bcd9eeb802b76b8cab75d048091cfce101d133eede3db867f2b1a7b19b7f4"
     },
     {
       "path": "src/beyond_pairs/route12_benchmarks/reproduce.py",
       "bytes": 7605,
-      "sha256": "ceef10d5044df687ee419b55b5769d7f2ec3ba560478af8ad129331c38e14239",
-      "scope": "source, documentation, test or notice"
+      "sha256": "ceef10d5044df687ee419b55b5769d7f2ec3ba560478af8ad129331c38e14239"
     },
     {
       "path": "src/beyond_pairs/route12_v9/__init__.py",
       "bytes": 78,
-      "sha256": "19e8afc0556a4ab70f0ba5bce8f647748fe53d2f9c9e7c80d3f6c3592a3aa6e7",
-      "scope": "source, documentation, test or notice"
+      "sha256": "19e8afc0556a4ab70f0ba5bce8f647748fe53d2f9c9e7c80d3f6c3592a3aa6e7"
     },
     {
       "path": "src/beyond_pairs/route12_v9/calibration.py",
       "bytes": 1421,
-      "sha256": "8e24dcadfa5602c3f6011d4d5dfe879750f1ea98f340cd497b9149aa520709b6",
-      "scope": "source, documentation, test or notice"
+      "sha256": "8e24dcadfa5602c3f6011d4d5dfe879750f1ea98f340cd497b9149aa520709b6"
     },
     {
       "path": "src/beyond_pairs/route12_v9/contracts.py",
       "bytes": 1199,
-      "sha256": "8f817d0490f33d891538b0580beb798624babcd64719009349ce380d321ecfba",
-      "scope": "source, documentation, test or notice"
+      "sha256": "8f817d0490f33d891538b0580beb798624babcd64719009349ce380d321ecfba"
     },
     {
       "path": "src/beyond_pairs/route12_v9/information.py",
       "bytes": 3426,
-      "sha256": "f7c22b3131171776dd2821599ae95985e19730733f2c809e44105b0abe5b9f6b",
-      "scope": "source, documentation, test or notice"
+      "sha256": "f7c22b3131171776dd2821599ae95985e19730733f2c809e44105b0abe5b9f6b"
     },
     {
       "path": "src/beyond_pairs/route12_v9/numerics.py",
       "bytes": 4423,
-      "sha256": "0dc50f1c3c80cc23b60a360da92a2ee9eb317be9b15ba9da53b33d10d0178935",
-      "scope": "source, documentation, test or notice"
+      "sha256": "0dc50f1c3c80cc23b60a360da92a2ee9eb317be9b15ba9da53b33d10d0178935"
     },
     {
       "path": "src/beyond_pairs/route12_v9/replay.py",
       "bytes": 4189,
-      "sha256": "4278c1d8d88939a45d686db69580c5c80f19e5d92f4a11b9fea703d95c396899",
-      "scope": "source, documentation, test or notice"
+      "sha256": "4278c1d8d88939a45d686db69580c5c80f19e5d92f4a11b9fea703d95c396899"
     },
     {
       "path": "src/beyond_pairs/route12_v9/variance.py",
       "bytes": 707,
-      "sha256": "2b1e4d7538da4c943cabb50bf59c051b7cf8d82957a8707f4830e18e58c404e9",
-      "scope": "source, documentation, test or notice"
+      "sha256": "2b1e4d7538da4c943cabb50bf59c051b7cf8d82957a8707f4830e18e58c404e9"
     },
     {
       "path": "src/beyond_pairs/route12_v9/verification.py",
       "bytes": 4661,
-      "sha256": "5a40a27552d2fad11676fb5a9397ee47644c0607042d9cef9327ea0d5b9c3d44",
-      "scope": "source, documentation, test or notice"
+      "sha256": "5a40a27552d2fad11676fb5a9397ee47644c0607042d9cef9327ea0d5b9c3d44"
     },
     {
       "path": "tests/route12_benchmarks/test_known_v11.py",
       "bytes": 5156,
-      "sha256": "19cc5d427314f2d696892680e89ba95ec25f618ed1920c5c598c4407ab8978c4",
-      "scope": "source, documentation, test or notice"
+      "sha256": "19cc5d427314f2d696892680e89ba95ec25f618ed1920c5c598c4407ab8978c4"
+    },
+    {
+      "path": "tests/route12_benchmarks/test_null_diagnostic_v13.py",
+      "bytes": 1217,
+      "sha256": "92192f45955f86bc4d4f421d3d9607c301e7845812fbd916376e7155defaf0d3"
     },
     {
       "path": "tests/route12_benchmarks/test_portable_v12.py",
       "bytes": 2691,
-      "sha256": "cd3a4238d38e0339b89427ba31825766b2fd54e0398ffcd1140bd621be8a6a7a",
-      "scope": "source, documentation, test or notice"
+      "sha256": "cd3a4238d38e0339b89427ba31825766b2fd54e0398ffcd1140bd621be8a6a7a"
+    },
+    {
+      "path": "tests/route12_benchmarks/test_round5_package_v13.py",
+      "bytes": 1194,
+      "sha256": "7123bea02b609217102d220d07dc005dbae1520fc02cffbd79c813a6a8bcdf5c"
     }
   ],
   "no_patient_or_biological_model_assets": true

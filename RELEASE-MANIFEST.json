@@ -1,8 +1,8 @@
 {
-  "version": "0.10.0",
-  "previous_version": "0.9.0",
-  "source_manifest_sha256": "507c4125e580c1900253ded32c31f96352ccd32ecf417a4471d33d5952ee1787",
-  "scope": "Code/tests/scalar results/artificial demonstration; biological models excluded.",
-  "validation": "provenance/release-validation.json",
-  "limitations": "See VALIDATION.md; source identity and scalar replay are not independent biological-fit replication."
+  "version": "0.11.0",
+  "previous_version": "0.10.0",
+  "source_manifest_sha256": "a6ffd28c53c5b6fe746bf3702e1e3ba3f818810ce6214ee942a05a7ece794bae",
+  "scope": "Safe source, tests, scalar results and artificial demo; no biological models or private history.",
+  "validation": "provenance/release-validation-v13.json",
+  "compatibility": "Author-tested study versions and explicitly attributed external referee environment; not every allowed version is validated."
 }
