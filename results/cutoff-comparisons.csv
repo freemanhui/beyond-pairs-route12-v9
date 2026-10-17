@@ -1,0 +1,13 @@
+N,minimum,cutoff,maximum_statistic_difference,mask_position_differences,rank_position_differences,individual_decision_disagreements
+1557,3,"eig=1e-08,count=3",0.0,0,0,0
+1557,3,"eig=1e-12,count=3",0.0,0,0,0
+1557,5,"eig=1e-08,count=5",0.0,0,0,0
+1557,5,"eig=1e-12,count=5",0.0,0,0,0
+1557,10,"eig=1e-08,count=10",0.0,0,0,0
+1557,10,"eig=1e-12,count=10",0.0,0,0,0
+6274,3,"eig=1e-08,count=3",0.0,0,0,0
+6274,3,"eig=1e-12,count=3",0.0,0,0,0
+6274,5,"eig=1e-08,count=5",0.0,0,0,0
+6274,5,"eig=1e-12,count=5",0.0,0,0,0
+6274,10,"eig=1e-08,count=10",0.0,0,0,0
+6274,10,"eig=1e-12,count=10",0.0,0,0,0

@@ -1,0 +1,155 @@
+{
+  "files": [
+    {
+      "path": "src/beyond_pairs/__init__.py",
+      "source_identity_sha256": "b83495cec1e9c922f0863fd3566701a85ef8ea497453c15c19934b6bb9534127",
+      "bytes": 91,
+      "sha256": "b83495cec1e9c922f0863fd3566701a85ef8ea497453c15c19934b6bb9534127",
+      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
+    },
+    {
+      "path": "src/beyond_pairs/order_ladder.py",
+      "source_identity_sha256": "ae186cf782eb26377393c20bfb36f9fa6360e9f0a8aadf8e1d8e51b6eb9d69f3",
+      "bytes": 4998,
+      "sha256": "ae186cf782eb26377393c20bfb36f9fa6360e9f0a8aadf8e1d8e51b6eb9d69f3",
+      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
+    },
+    {
+      "path": "src/beyond_pairs/measurement_score.py",
+      "source_identity_sha256": "540247995aae7d25959dd888a3a5dc8a3842adf263c7f1f38e6574c937d069fe",
+      "bytes": 5226,
+      "sha256": "540247995aae7d25959dd888a3a5dc8a3842adf263c7f1f38e6574c937d069fe",
+      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
+    },
+    {
+      "path": "src/beyond_pairs/finite_sample_ladder.py",
+      "source_identity_sha256": "cff74a53a16d7f4b6c3b85847a5ae701836c3f61bb62944b447abb1a507d1c2f",
+      "bytes": 6554,
+      "sha256": "cff74a53a16d7f4b6c3b85847a5ae701836c3f61bb62944b447abb1a507d1c2f",
+      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/__init__.py",
+      "source_identity_sha256": "19e8afc0556a4ab70f0ba5bce8f647748fe53d2f9c9e7c80d3f6c3592a3aa6e7",
+      "bytes": 78,
+      "sha256": "19e8afc0556a4ab70f0ba5bce8f647748fe53d2f9c9e7c80d3f6c3592a3aa6e7",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/contracts.py",
+      "source_identity_sha256": "8f817d0490f33d891538b0580beb798624babcd64719009349ce380d321ecfba",
+      "bytes": 1199,
+      "sha256": "8f817d0490f33d891538b0580beb798624babcd64719009349ce380d321ecfba",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/numerics.py",
+      "source_identity_sha256": "0dc50f1c3c80cc23b60a360da92a2ee9eb317be9b15ba9da53b33d10d0178935",
+      "bytes": 4423,
+      "sha256": "0dc50f1c3c80cc23b60a360da92a2ee9eb317be9b15ba9da53b33d10d0178935",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/replay.py",
+      "source_identity_sha256": "4278c1d8d88939a45d686db69580c5c80f19e5d92f4a11b9fea703d95c396899",
+      "bytes": 4189,
+      "sha256": "4278c1d8d88939a45d686db69580c5c80f19e5d92f4a11b9fea703d95c396899",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/verification.py",
+      "source_identity_sha256": "5a40a27552d2fad11676fb5a9397ee47644c0607042d9cef9327ea0d5b9c3d44",
+      "bytes": 4661,
+      "sha256": "5a40a27552d2fad11676fb5a9397ee47644c0607042d9cef9327ea0d5b9c3d44",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/information.py",
+      "source_identity_sha256": "f7c22b3131171776dd2821599ae95985e19730733f2c809e44105b0abe5b9f6b",
+      "bytes": 3426,
+      "sha256": "f7c22b3131171776dd2821599ae95985e19730733f2c809e44105b0abe5b9f6b",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/calibration.py",
+      "source_identity_sha256": "8e24dcadfa5602c3f6011d4d5dfe879750f1ea98f340cd497b9149aa520709b6",
+      "bytes": 1421,
+      "sha256": "8e24dcadfa5602c3f6011d4d5dfe879750f1ea98f340cd497b9149aa520709b6",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/variance.py",
+      "source_identity_sha256": "2b1e4d7538da4c943cabb50bf59c051b7cf8d82957a8707f4830e18e58c404e9",
+      "bytes": 707,
+      "sha256": "2b1e4d7538da4c943cabb50bf59c051b7cf8d82957a8707f4830e18e58c404e9",
+      "permission": "New original v9 code under settled author MIT selection and execution authority."
+    },
+    {
+      "path": "examples/demo.py",
+      "source_identity_sha256": "6c777f398cbae9c70e0678992f6f4d9a4ba927e72cbe6ccb11a619303a3fd7e1",
+      "bytes": 1572,
+      "sha256": "6c777f398cbae9c70e0678992f6f4d9a4ba927e72cbe6ccb11a619303a3fd7e1",
+      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+    },
+    {
+      "path": "examples/replay_counts.py",
+      "source_identity_sha256": "c50cb49ca7113ac19c35730c2b06a106c581370a5950b9b00cc905560011ba7c",
+      "bytes": 1212,
+      "sha256": "c50cb49ca7113ac19c35730c2b06a106c581370a5950b9b00cc905560011ba7c",
+      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+    },
+    {
+      "path": "README.md",
+      "source_identity_sha256": "c11d065815006f1102496f3c34b3498da62f14aff2a02b4e4a40d422ecea9151",
+      "bytes": 6751,
+      "sha256": "c11d065815006f1102496f3c34b3498da62f14aff2a02b4e4a40d422ecea9151",
+      "permission": "Original v9 review-candidate documentation/example or retained scoped notice.",
+      "original_candidate_sha256": "80108c3137805481aa5df18c863fc0e5d45cfedda29c95e134ea260b9e418b55"
+    },
+    {
+      "path": "LICENSE",
+      "source_identity_sha256": "eadd81819b601be23e2adf67f20f183d46b12a6fba0e4e3e06e057238cbd78a5",
+      "bytes": 1358,
+      "sha256": "eadd81819b601be23e2adf67f20f183d46b12a6fba0e4e3e06e057238cbd78a5",
+      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+    },
+    {
+      "path": "LEGACY-LICENCE.txt",
+      "source_identity_sha256": "c1205dfeedd6db3e7f214496d94cab7cedc5887852c50659004675e095db97d4",
+      "bytes": 1213,
+      "sha256": "c1205dfeedd6db3e7f214496d94cab7cedc5887852c50659004675e095db97d4",
+      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+    },
+    {
+      "path": "requirements.txt",
+      "source_identity_sha256": "5a81cde5d4f409222788b0a0da88fff0acdb160f45ab8839d9661cff6aa10424",
+      "bytes": 28,
+      "sha256": "5a81cde5d4f409222788b0a0da88fff0acdb160f45ab8839d9661cff6aa10424",
+      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+    },
+    {
+      "path": "pyproject.toml",
+      "source_identity_sha256": "f5a49bbb6b8d0e97e4bcfd2d8c95b5891c578946f79a0b86f2e22acc6acf0ee4",
+      "bytes": 406,
+      "sha256": "f5a49bbb6b8d0e97e4bcfd2d8c95b5891c578946f79a0b86f2e22acc6acf0ee4",
+      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+    }
+  ],
+  "dependency_notices": [
+    {
+      "distribution": "numpy",
+      "version": "1.26.4",
+      "path": "notices/numpy-LICENSE.txt",
+      "bytes": 93961,
+      "sha256": "d9aa013a9509b655c3fd4b12e8d2ff222df83df39273ba1697a1a869d55b2129"
+    },
+    {
+      "distribution": "scipy",
+      "version": "1.13.1",
+      "path": "notices/scipy-LICENSE.txt",
+      "bytes": 46808,
+      "sha256": "3b05dc069af17a3e112235cff907203272237bc345722cd1e50c192062ae050a"
+    }
+  ],
+  "scope": "Public code-only release of approved method files and notices; patient/model assets and private history excluded."
+}

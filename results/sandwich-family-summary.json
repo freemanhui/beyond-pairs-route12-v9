@@ -1,0 +1,18 @@
+{
+  "pair": {
+    "trace": 55.78172061552093,
+    "eigen_trace": 55.781720615520925,
+    "solve_residual": 8.326672684688674e-17,
+    "minimum_eigenvalue": 0.0023749435936668167,
+    "condition": 204.0913357565038,
+    "dimension": 55
+  },
+  "triple": {
+    "trace": 175.8749925541995,
+    "eigen_trace": 175.87499255419942,
+    "solve_residual": 1.1102230246251565e-16,
+    "minimum_eigenvalue": 8.072510141165126e-05,
+    "condition": 6164.065141731803,
+    "dimension": 175
+  }
+}

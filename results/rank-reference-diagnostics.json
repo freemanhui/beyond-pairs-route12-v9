@@ -1,0 +1,42 @@
+{
+  "pool_tails": {
+    "20_pools_count_533": {
+      "upper_tail": 0.11254932785019879,
+      "independent_upper_tail": 0.11254932785163647
+    },
+    "20_pools_count_551": {
+      "upper_tail": 0.03106483734683773,
+      "independent_upper_tail": 0.031064837347240182
+    },
+    "40_pools_count_1084": {
+      "upper_tail": 0.014503241206474289,
+      "independent_upper_tail": 0.014503241206843062
+    }
+  },
+  "sensitivity_tails": [
+    {
+      "rejections": 71,
+      "total": 1000,
+      "upper_tail": 0.024122403650303936,
+      "independent_upper_tail": 0.024122403650831067,
+      "CP_upper": 0.08871644088678733
+    },
+    {
+      "rejections": 52,
+      "total": 1000,
+      "upper_tail": 0.4211645837161906,
+      "independent_upper_tail": 0.4211645837167516,
+      "CP_upper": 0.0676350140505073
+    },
+    {
+      "rejections": 43,
+      "total": 1000,
+      "upper_tail": 0.7739255134541208,
+      "independent_upper_tail": 0.7739255134547118,
+      "CP_upper": 0.05748625796197234
+    }
+  ],
+  "reference_between_pool_SD": 0.011931372190894154,
+  "reference_SE_20": 0.0026679359283689925,
+  "scope": "Retrospective one-sided unadjusted continuous-rank beta-binomial reference. Conservative ties stochastically reduce rejections. No estimated composite-null guarantee or changed cutoff."
+}

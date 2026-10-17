@@ -1,0 +1,40 @@
+{
+  "version": "0.10.0",
+  "known_suite": {
+    "cases": 24,
+    "status": "inherited completed outcome, not rerun",
+    "source": "tests/route12_benchmarks/test_known_v11.py"
+  },
+  "new_interface": {
+    "tests": 14,
+    "passed": true,
+    "source_origins": "candidate only; 14 imported beyond_pairs modules"
+  },
+  "surrogate": {
+    "passed": true,
+    "cohorts": 12,
+    "new_artificial_pair_triple_fits": 84,
+    "scientific_MSK_cohorts": 0,
+    "elapsed_s": 3.5913049580994993,
+    "scope": {
+      "patient_data": false,
+      "surrogate_is_MSK_reproduction": false,
+      "calibration": "specified known null law, not cohort-refitted bootstrap"
+    }
+  },
+  "decision_replay": {
+    "checked": 86400,
+    "fits": 0,
+    "draws": 0,
+    "numerical_caution_preserved": true
+  },
+  "read_only_review": {
+    "findings_resolved": [
+      "counts-only and custom-law scope metadata",
+      "canonical q/p input hashes",
+      "caution propagation"
+    ],
+    "no_important_remaining_defect_in_reviewed_changes": true
+  },
+  "qualification": "The surrogate run preceded metadata-only corrections; it was not repeated. Final interface boundaries passed. Biological laws, counts and fits are not reproduced by the public replay."
+}

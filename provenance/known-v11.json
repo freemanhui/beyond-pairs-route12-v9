@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "cases": 24,
+  "case_names": [
+    "test_01_trace_diagonal",
+    "test_02_equal_law_dimension",
+    "test_03_singular_refused",
+    "test_04_reparameterization",
+    "test_05_covariance_explicit",
+    "test_06_pair_moments",
+    "test_07_parity_lrt",
+    "test_08_identical_lrt_zero",
+    "test_09_boundary_endpoint",
+    "test_10_negative_lrt_refused",
+    "test_11_rank_999",
+    "test_12_rank_ties",
+    "test_13_rank_400",
+    "test_14_empty_mask_zero",
+    "test_15_U_explicit_pairs",
+    "test_16_D_existing_definition",
+    "test_17_fold_total",
+    "test_18_namespace_independence",
+    "test_19_paired_accounting",
+    "test_20_pool_equal_weights",
+    "test_21_pool_uncertainty_clusters",
+    "test_22_hash_refusal",
+    "test_23_partial_fit_retention",
+    "test_24_labels"
+  ],
+  "scope": "Inherited completed v11 test outcome; the closed formal stage is not rerun for release.",
+  "test_source_sha256": "19cc5d427314f2d696892680e89ba95ec25f618ed1920c5c598c4407ab8978c4",
+  "numerical_core_sha256": "f295bbbc5b3359dcf91f95c8e1e339da9b05498e9c78131cafe6698e7d1b020a"
+}

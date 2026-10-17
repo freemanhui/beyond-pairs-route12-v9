@@ -1,155 +1,354 @@
 {
+  "version": "0.10.0",
   "files": [
     {
-      "path": "src/beyond_pairs/__init__.py",
-      "source_identity_sha256": "b83495cec1e9c922f0863fd3566701a85ef8ea497453c15c19934b6bb9534127",
-      "bytes": 91,
-      "sha256": "b83495cec1e9c922f0863fd3566701a85ef8ea497453c15c19934b6bb9534127",
-      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
-    },
-    {
-      "path": "src/beyond_pairs/order_ladder.py",
-      "source_identity_sha256": "ae186cf782eb26377393c20bfb36f9fa6360e9f0a8aadf8e1d8e51b6eb9d69f3",
-      "bytes": 4998,
-      "sha256": "ae186cf782eb26377393c20bfb36f9fa6360e9f0a8aadf8e1d8e51b6eb9d69f3",
-      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
-    },
-    {
-      "path": "src/beyond_pairs/measurement_score.py",
-      "source_identity_sha256": "540247995aae7d25959dd888a3a5dc8a3842adf263c7f1f38e6574c937d069fe",
-      "bytes": 5226,
-      "sha256": "540247995aae7d25959dd888a3a5dc8a3842adf263c7f1f38e6574c937d069fe",
-      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
-    },
-    {
-      "path": "src/beyond_pairs/finite_sample_ladder.py",
-      "source_identity_sha256": "cff74a53a16d7f4b6c3b85847a5ae701836c3f61bb62944b447abb1a507d1c2f",
-      "bytes": 6554,
-      "sha256": "cff74a53a16d7f4b6c3b85847a5ae701836c3f61bb62944b447abb1a507d1c2f",
-      "permission": "Unchanged exact subset of author-approved ten-file MIT scope; existing grant retained."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/__init__.py",
-      "source_identity_sha256": "19e8afc0556a4ab70f0ba5bce8f647748fe53d2f9c9e7c80d3f6c3592a3aa6e7",
-      "bytes": 78,
-      "sha256": "19e8afc0556a4ab70f0ba5bce8f647748fe53d2f9c9e7c80d3f6c3592a3aa6e7",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/contracts.py",
-      "source_identity_sha256": "8f817d0490f33d891538b0580beb798624babcd64719009349ce380d321ecfba",
-      "bytes": 1199,
-      "sha256": "8f817d0490f33d891538b0580beb798624babcd64719009349ce380d321ecfba",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/numerics.py",
-      "source_identity_sha256": "0dc50f1c3c80cc23b60a360da92a2ee9eb317be9b15ba9da53b33d10d0178935",
-      "bytes": 4423,
-      "sha256": "0dc50f1c3c80cc23b60a360da92a2ee9eb317be9b15ba9da53b33d10d0178935",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/replay.py",
-      "source_identity_sha256": "4278c1d8d88939a45d686db69580c5c80f19e5d92f4a11b9fea703d95c396899",
-      "bytes": 4189,
-      "sha256": "4278c1d8d88939a45d686db69580c5c80f19e5d92f4a11b9fea703d95c396899",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/verification.py",
-      "source_identity_sha256": "5a40a27552d2fad11676fb5a9397ee47644c0607042d9cef9327ea0d5b9c3d44",
-      "bytes": 4661,
-      "sha256": "5a40a27552d2fad11676fb5a9397ee47644c0607042d9cef9327ea0d5b9c3d44",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/information.py",
-      "source_identity_sha256": "f7c22b3131171776dd2821599ae95985e19730733f2c809e44105b0abe5b9f6b",
-      "bytes": 3426,
-      "sha256": "f7c22b3131171776dd2821599ae95985e19730733f2c809e44105b0abe5b9f6b",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/calibration.py",
-      "source_identity_sha256": "8e24dcadfa5602c3f6011d4d5dfe879750f1ea98f340cd497b9149aa520709b6",
-      "bytes": 1421,
-      "sha256": "8e24dcadfa5602c3f6011d4d5dfe879750f1ea98f340cd497b9149aa520709b6",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "src/beyond_pairs/route12_v9/variance.py",
-      "source_identity_sha256": "2b1e4d7538da4c943cabb50bf59c051b7cf8d82957a8707f4830e18e58c404e9",
-      "bytes": 707,
-      "sha256": "2b1e4d7538da4c943cabb50bf59c051b7cf8d82957a8707f4830e18e58c404e9",
-      "permission": "New original v9 code under settled author MIT selection and execution authority."
-    },
-    {
-      "path": "examples/demo.py",
-      "source_identity_sha256": "6c777f398cbae9c70e0678992f6f4d9a4ba927e72cbe6ccb11a619303a3fd7e1",
-      "bytes": 1572,
-      "sha256": "6c777f398cbae9c70e0678992f6f4d9a4ba927e72cbe6ccb11a619303a3fd7e1",
-      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
-    },
-    {
-      "path": "examples/replay_counts.py",
-      "source_identity_sha256": "c50cb49ca7113ac19c35730c2b06a106c581370a5950b9b00cc905560011ba7c",
-      "bytes": 1212,
-      "sha256": "c50cb49ca7113ac19c35730c2b06a106c581370a5950b9b00cc905560011ba7c",
-      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
-    },
-    {
-      "path": "README.md",
-      "source_identity_sha256": "c11d065815006f1102496f3c34b3498da62f14aff2a02b4e4a40d422ecea9151",
-      "bytes": 6751,
-      "sha256": "c11d065815006f1102496f3c34b3498da62f14aff2a02b4e4a40d422ecea9151",
-      "permission": "Original v9 review-candidate documentation/example or retained scoped notice.",
-      "original_candidate_sha256": "80108c3137805481aa5df18c863fc0e5d45cfedda29c95e134ea260b9e418b55"
-    },
-    {
-      "path": "LICENSE",
-      "source_identity_sha256": "eadd81819b601be23e2adf67f20f183d46b12a6fba0e4e3e06e057238cbd78a5",
-      "bytes": 1358,
-      "sha256": "eadd81819b601be23e2adf67f20f183d46b12a6fba0e4e3e06e057238cbd78a5",
-      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+      "path": ".gitignore",
+      "bytes": 93,
+      "sha256": "24f0c8819cac50692a0c4f2d52f8c707ec3c9bc21794c3358af0dab992b8cd7c",
+      "scope": "source, documentation, test or notice"
     },
     {
       "path": "LEGACY-LICENCE.txt",
-      "source_identity_sha256": "c1205dfeedd6db3e7f214496d94cab7cedc5887852c50659004675e095db97d4",
       "bytes": 1213,
       "sha256": "c1205dfeedd6db3e7f214496d94cab7cedc5887852c50659004675e095db97d4",
-      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+      "scope": "source, documentation, test or notice"
     },
     {
-      "path": "requirements.txt",
-      "source_identity_sha256": "5a81cde5d4f409222788b0a0da88fff0acdb160f45ab8839d9661cff6aa10424",
-      "bytes": 28,
-      "sha256": "5a81cde5d4f409222788b0a0da88fff0acdb160f45ab8839d9661cff6aa10424",
-      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
+      "path": "LICENSE",
+      "bytes": 1399,
+      "sha256": "96ec10a27dc029153ea59c5ffe933bad58675b00b73f4df299881481371cda41",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6386,
+      "sha256": "4bd72cd88c426b460e70fabe28198ac2cd087e3697d2628566bfff938bb9759f",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2511,
+      "sha256": "7b1ae0a7d03afb850515bfa4a87bb6dc5b4acf1f2ef4f0757324d428e0c2b33a",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "examples/demo.py",
+      "bytes": 1572,
+      "sha256": "6c777f398cbae9c70e0678992f6f4d9a4ba927e72cbe6ccb11a619303a3fd7e1",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "examples/replay_counts.py",
+      "bytes": 1212,
+      "sha256": "c50cb49ca7113ac19c35730c2b06a106c581370a5950b9b00cc905560011ba7c",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "notices/numpy-LICENSE.txt",
+      "bytes": 93961,
+      "sha256": "d9aa013a9509b655c3fd4b12e8d2ff222df83df39273ba1697a1a869d55b2129",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "notices/scipy-LICENSE.txt",
+      "bytes": 46808,
+      "sha256": "3b05dc069af17a3e112235cff907203272237bc345722cd1e50c192062ae050a",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/known-v11.json",
+      "bytes": 1102,
+      "sha256": "5145450658b970c4d5a22e4f2ec4f7c2ef75bc2bb8278366f19c7e3e6a78792f",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/release-validation.json",
+      "bytes": 1234,
+      "sha256": "f802c3be993badb1ec631cfe3736ba6a3463ab7cf77a6c64af2fbb00abcaeb72",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/source-manifest-v0.9.0.json",
+      "bytes": 7718,
+      "sha256": "f78a2e355793662972e2df5a94200272ccf9c1cedef2058d2e32e26855bbc6ab",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/v11-producers/README.md",
+      "bytes": 811,
+      "sha256": "6c32f0a0eade5a1e45f24f67dfd9d3b3a34ceea346a3ce0802ee071065151fa4",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/v11-producers/route12_benchmarks_audit.py",
+      "bytes": 21842,
+      "sha256": "4cee54e7bc1eeadc761d2c89e35dea414e9fe7770e8d34e818aa37b31ed313d3",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/v11-producers/route12_benchmarks_initial.py",
+      "bytes": 7472,
+      "sha256": "858dad0ccd5a9942b1becb07b3412a1867e1b60bc442c2d201f9c9a688a18c3d",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/v11-producers/route12_benchmarks_secondary.py",
+      "bytes": 10204,
+      "sha256": "8bfd8896537c4571a4cab04dd41df590623854f6bc981586e1a2b16f81001766",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "provenance/v11-producers/route12_benchmarks_studies.py",
+      "bytes": 10283,
+      "sha256": "1e0f1a64424cb2d2050fce49de82a77575583c6804cb5ec719c6dea40e67fc5f",
+      "scope": "source, documentation, test or notice"
     },
     {
       "path": "pyproject.toml",
-      "source_identity_sha256": "f5a49bbb6b8d0e97e4bcfd2d8c95b5891c578946f79a0b86f2e22acc6acf0ee4",
-      "bytes": 406,
-      "sha256": "f5a49bbb6b8d0e97e4bcfd2d8c95b5891c578946f79a0b86f2e22acc6acf0ee4",
-      "permission": "Original v9 review-candidate documentation/example or retained scoped notice."
-    }
-  ],
-  "dependency_notices": [
-    {
-      "distribution": "numpy",
-      "version": "1.26.4",
-      "path": "notices/numpy-LICENSE.txt",
-      "bytes": 93961,
-      "sha256": "d9aa013a9509b655c3fd4b12e8d2ff222df83df39273ba1697a1a869d55b2129"
+      "bytes": 583,
+      "sha256": "6529dca2085d2d6437ab48171291871c346b2a2169ad3af16958612913203515",
+      "scope": "source, documentation, test or notice"
     },
     {
-      "distribution": "scipy",
-      "version": "1.13.1",
-      "path": "notices/scipy-LICENSE.txt",
-      "bytes": 46808,
-      "sha256": "3b05dc069af17a3e112235cff907203272237bc345722cd1e50c192062ae050a"
+      "path": "requirements-dev.txt",
+      "bytes": 33,
+      "sha256": "02a8fce7dd8d5fbd44c0ec8d51d5d6967d44a12d3149427fe6b129e705ab106a",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 28,
+      "sha256": "5a81cde5d4f409222788b0a0da88fff0acdb160f45ab8839d9661cff6aa10424",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 1784,
+      "sha256": "947ca606cedf1560bc62d69bb705fe1491685011423ba7ecc3dd35a3bb1bbe40",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/cutoff-comparisons.csv",
+      "bytes": 597,
+      "sha256": "76fba8167874c5791035a03ac89134c13263bac4d89d9c94691b5d446df3bd5c",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/hidden-coordinates.csv",
+      "bytes": 7654,
+      "sha256": "da8e84bab93d2f5ae5fe2747425832f5e66aad975e1f46e61a33851f8f1227ad",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/lrt-paired.csv",
+      "bytes": 225,
+      "sha256": "ff3915e0b709afaea3ba2221a7040701fc603c58c5e104bd994fd7068095929a",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/lrt.csv",
+      "bytes": 466119,
+      "sha256": "7872860e0e44af8ed3353db72bf3ff7f8ee260eb4d5c4756e27e0edb98123811",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/matched-oracle.csv",
+      "bytes": 2573645,
+      "sha256": "c79a6f244c0787b04cb95f90964b0eafa7f30582af1436e4fd8cc923b094211c",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/pool-counts.csv",
+      "bytes": 1469,
+      "sha256": "cd9239498b1b9f1f2eff80dbe5d4b113c6d91aa5fb6d789af645e3f02e069d82",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/pools.csv",
+      "bytes": 2807300,
+      "sha256": "4a002706392eacf24fb8dea5f65953a57db97a801637d3a5cb07184636dcd2ad",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/rank-reference-diagnostics.json",
+      "bytes": 1305,
+      "sha256": "d4de696a3378041e3b763f12b540257ae6cad001db1bfe8119d355ec8ad10440",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/sandwich-family-summary.json",
+      "bytes": 483,
+      "sha256": "535d70e8b7c2667591ec485fcd8653cacb4a140f83f3a02e80ed5c659fd4a3ac",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/sandwich-sweep.csv",
+      "bytes": 857,
+      "sha256": "241e974398bd1992ef5dbe95fb6996c94d0ab83cef062b4c926eb77ac1f55a65",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/sensitivity.csv",
+      "bytes": 3556436,
+      "sha256": "080900ee11ee4f0f96cb9072e5c4a1590c32729268379b5e06ed20e308d673b5",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "results/triple-coefficients-rounded.csv",
+      "bytes": 7017,
+      "sha256": "14bd3418a256a38d2f7acbb04cce371b5b279ad64abc58c2756b42831292802b",
+      "scope": "reported scalar summary"
+    },
+    {
+      "path": "src/beyond_pairs/__init__.py",
+      "bytes": 91,
+      "sha256": "b83495cec1e9c922f0863fd3566701a85ef8ea497453c15c19934b6bb9534127",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/finite_sample_ladder.py",
+      "bytes": 6554,
+      "sha256": "cff74a53a16d7f4b6c3b85847a5ae701836c3f61bb62944b447abb1a507d1c2f",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/hidden_layer.py",
+      "bytes": 13860,
+      "sha256": "90fc70449974d189dd8e10616ef3059cfc3790ef68d466ab4c177e4c0df536aa",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/information_layers.py",
+      "bytes": 7034,
+      "sha256": "69e8cd6aa539fc295b715bdccba8464772ad8a6df8501bbb70a0f82ace5fa452",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/measurement_score.py",
+      "bytes": 5226,
+      "sha256": "540247995aae7d25959dd888a3a5dc8a3842adf263c7f1f38e6574c937d069fe",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/order_ladder.py",
+      "bytes": 4998,
+      "sha256": "ae186cf782eb26377393c20bfb36f9fa6360e9f0a8aadf8e1d8e51b6eb9d69f3",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12/__init__.py",
+      "bytes": 79,
+      "sha256": "c53ac607a0f30a0258864005de11007b2d077763b86e329e9fee854cc422b54f",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12/crossfit.py",
+      "bytes": 8146,
+      "sha256": "43fa027810a681521902a2149f624b713c6d71afa119bf534f7f1791e419bd48",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12/masked_projection.py",
+      "bytes": 8296,
+      "sha256": "e80d70627e36c3acdda6cbfb959c3a8eabd050b3d1b17019123e44df64ec4523",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12/numerics.py",
+      "bytes": 3275,
+      "sha256": "7155fa0475fe029ee521ecc9dba18cd45a4ea3e1034481fe27b95be6ec2881cf",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12/representation.py",
+      "bytes": 6124,
+      "sha256": "a48d6217a48098601e64c6de009232119dea91564db2f5345871bf88386f6693",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_benchmarks/__init__.py",
+      "bytes": 76,
+      "sha256": "97bd110a057ea09edc687f7771c9715008692dcd94c8dc1040998f1d456ae830",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_benchmarks/core.py",
+      "bytes": 10101,
+      "sha256": "f295bbbc5b3359dcf91f95c8e1e339da9b05498e9c78131cafe6698e7d1b020a",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_benchmarks/portable.py",
+      "bytes": 9836,
+      "sha256": "7a041bfccfcb410cdc1bf771d99617547babcd5288bae7c5175128a651445a1e",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_benchmarks/reproduce.py",
+      "bytes": 7605,
+      "sha256": "ceef10d5044df687ee419b55b5769d7f2ec3ba560478af8ad129331c38e14239",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/__init__.py",
+      "bytes": 78,
+      "sha256": "19e8afc0556a4ab70f0ba5bce8f647748fe53d2f9c9e7c80d3f6c3592a3aa6e7",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/calibration.py",
+      "bytes": 1421,
+      "sha256": "8e24dcadfa5602c3f6011d4d5dfe879750f1ea98f340cd497b9149aa520709b6",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/contracts.py",
+      "bytes": 1199,
+      "sha256": "8f817d0490f33d891538b0580beb798624babcd64719009349ce380d321ecfba",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/information.py",
+      "bytes": 3426,
+      "sha256": "f7c22b3131171776dd2821599ae95985e19730733f2c809e44105b0abe5b9f6b",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/numerics.py",
+      "bytes": 4423,
+      "sha256": "0dc50f1c3c80cc23b60a360da92a2ee9eb317be9b15ba9da53b33d10d0178935",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/replay.py",
+      "bytes": 4189,
+      "sha256": "4278c1d8d88939a45d686db69580c5c80f19e5d92f4a11b9fea703d95c396899",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/variance.py",
+      "bytes": 707,
+      "sha256": "2b1e4d7538da4c943cabb50bf59c051b7cf8d82957a8707f4830e18e58c404e9",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "src/beyond_pairs/route12_v9/verification.py",
+      "bytes": 4661,
+      "sha256": "5a40a27552d2fad11676fb5a9397ee47644c0607042d9cef9327ea0d5b9c3d44",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "tests/route12_benchmarks/test_known_v11.py",
+      "bytes": 5156,
+      "sha256": "19cc5d427314f2d696892680e89ba95ec25f618ed1920c5c598c4407ab8978c4",
+      "scope": "source, documentation, test or notice"
+    },
+    {
+      "path": "tests/route12_benchmarks/test_portable_v12.py",
+      "bytes": 2691,
+      "sha256": "cd3a4238d38e0339b89427ba31825766b2fd54e0398ffcd1140bd621be8a6a7a",
+      "scope": "source, documentation, test or notice"
     }
   ],
-  "scope": "Public code-only release of approved method files and notices; patient/model assets and private history excluded."
+  "no_patient_or_biological_model_assets": true
 }

@@ -1,116 +1,53 @@
-# Route12 v9: target-specific co-mutation diagnostics
+# Higher-order information and prediction in cancer co-mutation
 
-Public code release v0.9.0, 16 October 2026. This source package contains the
-approved portable numerical method, deterministic toy and reconstruction
-instructions. It includes no patient data, cohort identifiers, fitted biological
-model, restricted fitted-law samples or credentials. Publishing this code does
-not constitute a full scientific refit. The source and dependency notices are
-identified in SOURCE-MANIFEST.json and RELEASE-MANIFEST.json.
+Code and scalar results for *Separating higher-order information from prediction in cancer co-mutation*, by Freeman Hui. Release **v0.10.0** adds the benchmark implementation, the exact 24-case test suite, a portable ten-variable synthetic demonstration, and scalar records sufficient to reaggregate every S12 table and redraw Figures 1 and 2. The older v0.9.0 tag is retained. The repository name remains stable so existing links continue to work.
 
-## Environment and first example
+## Install
 
-Use Python 3.11.5, NumPy 1.26.4 and SciPy 1.13.1. Dependency binaries are not
-bundled. Obtain/install them separately under their notices; installation or
-network access is not performed by the example. Native numerical threads:
+Study environment: Python 3.11.5, NumPy 1.26.4, SciPy 1.13.1, pytest 8.3.3; CPU and one native numerical thread. From the repository root:
 
 ```sh
-export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
-export VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1
-PYTHONPATH=src python3.11 -B examples/demo.py
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[test,figures]'
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1
 ```
 
-The deterministic three-spin parity example enumerates eight states and five
-identical 40-observation fold-count tables. The exact pairwise parameters are
-zero, supplied analytically. It performs **zero fits and zero random draws**.
-Each raw U statistic is 216/1560, its conditional quadratic target is 0.16,
-and its oracle information is 1-H_binary(0.7), approximately 0.118709 bits.
-The quadratic and entropy targets differ. An independent implementation checks
-all five positions. This is a software/arithmetic installation check, not a
-new cancer experiment or full scientific replication.
-
-## Saved-result reconstruction
-
-For permitted user-supplied finite state counts and fitted endpoints:
+## Reproduce the reported figures and tables without fits
 
 ```sh
-PYTHONPATH=src python3.11 -B examples/replay_counts.py own-input.npz
+python -m beyond_pairs.route12_benchmarks.reproduce --data results --output review-output --figures
 ```
 
-The NPZ must contain `tables` (5 by 2**p, nonnegative integer counts), strictly
-positive normalized `p` (known evaluation law), `q0` (known null reference),
-and `parameters` (5 by p*(p+1)/2, finite pairwise training parameters). Arrays
-use the binary-state index sum(2**i*x_i), singles then lexicographic pairs,
-and triples in lexicographic order. Pickle loading is disabled. Each parameter
-vector must fit the other four folds, within moment1e-9, entropy-dual1e-7 bits
-and normalization1e-12. The program refuses failed endpoints, material negative
-spectra and incomplete shape contracts; it never silently fits missing inputs.
+This independently reaggregates every released evaluation decision using the released calibration statistics, checks the stored rank numerators, recomputes conditional Clopper–Pearson intervals, paired differences and pool-level uncertainty, and writes `tables.json`, `figure1-prediction.pdf/png` and `figure2-lrt-mask.pdf/png`. It includes the complete matched-mask and sensitivity tables, all 48 coordinate summaries, the full 120-row rounded coefficient table, sandwich diagnostics and posthoc rank-reference tails. This is result replay, not regeneration of the underlying biological fits or independent external replication.
 
-`replay.py` reconstructs A oracle, B estimated residual/fixed weight and mask,
-C estimated weight/fixed mask, and D estimated weight/mask. The spectral cutoff
-is 1e-10 of the largest positive eigenvalue; a learned mask requires training
-expected triple count >=5. `verification.py` independently reconstructs the
-same maps and contractions. Outputs distinguish raw U and its conditional
-quadratic target, and multiply each by 1000/(2*ln(2)) only for the displayed
-local information scale. Neither is a qualified unbiased estimator of L3.
+## Run a complete public synthetic pipeline
 
-`information.py` separates unfloored oracle score, KL and finite-sample
-variance/range expressions. Its numeric reference label does not enclose an
-exact machine-certified reference. `calibration.py` implements conservative
-add-one ranks, fixed planned-denominator exact binomial summaries and the
-continuous-pool tail parameters. `variance.py` gives the same-fixed-kernel
-split/pooled identity. These targets and assumptions must remain separate.
+```sh
+python -m beyond_pairs.route12_benchmarks.portable demo --output surrogate-output
+```
 
-## Scientific reproduction and its access boundary
+The deterministic positive ten-variable law is uniform Q and P(x)=Q(x)[1+0.3 product of the first three ±1 spins]. All single/pair moments are exactly shared. The command registers its roster before drawing, creates 12 artificial cohorts in two pools, performs 84 pair/triple fits, retains endpoints, runs the LRT and fully learned residual test, the nine cutoff/mask settings and ten pooled mask/map/weight combinations, and produces calibrated decisions and exact surrogate sandwich traces. It uses no repository-private paths or data. The tiny default B=3 calibration pool cannot reject at alpha=.05; it tests the pipeline and **does not estimate power or reproduce the MSK study**.
 
-The cancer-study frozen laws and patient data are excluded. Author permission
-is recorded separately from providers' conditions. MSK-CHORD is under
-CC BY-NC-ND4.0; applicability to derived fitted models remains unqualified.
-No synthetic sample is declared cleared solely because it was generated from
-a restricted fitted law. Independent researchers need lawful access and must
-check the applicable provider conditions before obtaining data or models.
+Larger runs require an explicit `--maximum-cohorts` and remain the caller's resource decision. For the published repeated-pool roster on a separately obtained law, use `--N 1557 --pools 20 --calibration 999 --null 500 --alternative 200 --maximum-cohorts 33980 --laws allowed-laws.npz`; repeat at N=6274 if resources permit. The portable driver computes additional LRT/sensitivity/factorial diagnostics on those cohorts, unlike the original repeated-pool study, which evaluated only residual D. Its new seed namespace is deliberately distinct from the original study and it must not be described as an identical rerun. Original producer code/seed schemes are in `provenance/v11-producers/`.
 
-The accompanying private scientific archive binds all 4,000 retained cohorts,
-20,000 reviewed positions (including exactly two recovered P2 fits), and the
-separate 4,398 fresh cohorts/21,990 accepted P2 fits. Archive reconstruction is
-not a fresh refit. It is available for permission-scoped review, not bundled here.
+## Explicit inputs and generic routines
 
-A full fresh refit is a separate route requiring a prospectively registered
-run and appropriate law access. Use the exact known pair law and frozen
-alternative, five-fold integer largest remainders of source proportions
-[1250,1195,1298,1268,1263], and seed namespace
-SeedSequence([20261016,9,1,N,law_id,purpose,index]). For each N1557/6274, Tier1
-uses law0/purpose0/index0..998 for calibration, law0/purpose1/index0..999 for
-null evaluation, and law7/purpose1/index0..199 for alternatives. The four
-pilot index0 cases inherit inside this roster; do not add them again. The
-predeclared Tier2 prefixes499/500/200 are only a cost-admission fallback,
-not an optional second calibration experiment.
+`portable cohort --counts five-fold-counts.npy --output cohort-output` accepts a 5 × 2^d integer count array for d=3..12 and fits/scores D and the pooled LRT without a known evaluation law. This counts-only command performs no calibration; external input provenance is unknown. State order is the canonical least-significant-bit-first enumeration in `designs(d)`. `--laws` for a synthetic demonstration requires an NPZ with positive normalized same-order `q` and `p`; q must be a pairwise exponential law. Canonical q/p hashes, dimension and the input-file digest are registered before draws; custom-law provenance remains the caller's responsibility. NumPy pickle loading is disabled. Numerical failures retain endpoints and terminate, rather than silently remove cohorts or relax tolerances.
 
-The included MIT-permitted `order_ladder.maxent` supplies the original
-zero-start Newton method; `finite_sample_ladder.py` supplies historical
-projection and floored score helpers. Preserve all failed endpoints and check
-moment/dual/normalization gates before passing coefficients to `replay.py`.
-The package imports but does not execute an optimizer in its isolated review.
-These generic helpers are not a newly executed full-study pipeline: the
-private owning run controllers, resource supervision, draw identities and
-all retained endpoint receipts remain separate archival evidence.
+The unchanged `core.py` exposes `pooled_lrt`, `fully_learned`, `oracle_factorial`, `sandwich`, `rank_decisions`, and `pool_summary`. `route12.representation.traced_layers` and `traced_mixture` accept positive finite laws/mixtures for signed decompositions. They perform fits; inspect costs before use. Natural-coefficient recovery is a held-fold-size weighted average followed by SD over independent cohorts, as documented in the original producer. Restricted hidden coordinates or biological law files are not supplied.
 
-Freeze D as primary before outcomes. Use calibration p=(1+#(Tcal>=Tobs))/1000
-and alpha.05, with conditional null CP upper<=.08 and conservatively pilot-
-charged power lower>=.80. Runtime-based tier admission does not by itself
-establish an unconditional fixed-B rank theorem. Our reported null counts
-52/1000 and38/1000, and alternative174/200 and200/200, concern one specified
-null/frozen alternative. No patient/composite-null claim follows. All700 saved
-finite-sample Bernstein expressions remain zero; no positive certificate is
-claimed. Refit costs, needed access and fresh-run approval are not supplied by
-successful archive or import checks.
+## Tests, provenance and numerical limits
 
-## Rights and scope
+```sh
+python -m pytest -q tests/route12_benchmarks/test_known_v11.py
+python -m pytest -q tests/route12_benchmarks/test_portable_v12.py
+```
 
-`SOURCE-MANIFEST.json` identifies the exact admitted files. `LICENSE` applies
-MIT to the new original v9 method/example/documentation files and the four
-unchanged older files explicitly covered by the existing ten-file permission.
-`LEGACY-LICENCE.txt` retains that scoped historical grant; it is not a blanket
-licence for any other repository file. External NumPy/SciPy notices are included
-verbatim in `notices/`. Their bundled third-party conditions remain separate.
-Do not infer model/data permission from a code licence. This candidate excludes
-private execution I/O/controllers, dynamic loaders and public/network actions.
+The first command is the exact 24-case suite used for the scientific computation. Its original completed result is inherited in `provenance/known-v11.json`; release validation does not rerun that consumed formal research phase. The second suite tests the new public-input boundaries. Source hashes, validation scope, retained failed development attempts and public surrogate evidence are documented in the manifests and `VALIDATION.md`. No cross-platform numerical guarantee is claimed. Near-singular learned weights can amplify equivalent floating-point representations; the full-mask OR/LW comparison remains flagged in the released results.
+
+Calibration is under a specified known null law, not a cohort-refitted parametric bootstrap or composite-null guarantee. Retrospective sensitivity does not replace the original prespecified 1e-10/5 residual setting. Original private prospective records are not a retrospective public preregistration.
+
+## Permissions and exclusions
+
+MIT applies to the original source, tests, examples and documentation in `SOURCE-MANIFEST.json`; dependency notices and the legacy notice are retained. Patient data, patient-derived count tables, fitted biological probability laws/weights, unrounded parameter archives, credentials and private Git history are excluded. Provider terms remain separate: the author has not established how MSK-CHORD's CC BY-NC-ND 4.0 terms apply to derived-model redistribution. Obtain permitted model/data access independently. Code permission does not clear those assets. The rounded coefficient table is the already reported numerical summary, not an executable model release.

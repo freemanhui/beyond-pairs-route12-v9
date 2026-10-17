@@ -1,8 +1,8 @@
 MIT License
 
-Copyright (c) 2026 Freeman Hui for new original v9 files.
+Copyright (c) 2026 Freeman Hui for original v9 and benchmark source, tests and documentation.
 Existing copyright holders and notices for the exact four inherited files are retained.
-Scope: original source/example/documentation files in SOURCE-MANIFEST.json only.
+Scope: original source/test/example/documentation files in SOURCE-MANIFEST.json only.
 External dependency notices remain separate. No licence to patient data or models is granted.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

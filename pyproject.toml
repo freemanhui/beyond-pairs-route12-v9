@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "beyond-pairs-route12-v9"
-version = "0.9.0"
+version = "0.10.0"
 description = "Target-specific quadratic, information and mixture diagnostics"
 requires-python = ">=3.11,<3.12"
 dependencies = ["numpy==1.26.4", "scipy==1.13.1"]
@@ -11,3 +11,11 @@ license = {file = "LICENSE"}
 readme = "README.md"
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.3"]
+figures = ["matplotlib==3.10.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
